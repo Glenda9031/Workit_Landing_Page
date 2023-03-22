@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Fraunces";
+    src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+    format("truetype-variations");
+    font-weight: 600;
+    font-stretch: 50% 200%;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+    format("truetype-variations");
+    font-weight: 400;
+    font-stretch: 50% 200%;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+--dark-purple: #24053e;
+--eucalyptus: #44ffa1;
+--davys-gray: #584d62;
+--ghost-white: #fcf8ff;
+--white: #fff;
+
+/* fonts */
+--heading-font: "Fraunces", serif;
+--body-font: "Manrope", sans-serif;
+
+--transition: 0.3s ease-in-out all;
+
+--max-width: 1110px;
+}
+
+body {
+    position: relative;
+    z-index: -5;
+    font-family: var(--body-font);
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--heading-font);
+    color: var(--dark-purple);
+}
+
+p {
+    color: var(--davys-gray);
+}
+
